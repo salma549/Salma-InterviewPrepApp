@@ -1,0 +1,9 @@
+packages installed :
+
+Vite+react
+
+1.Frontent
+    npm i axios
+2.Backend
+    npm i express multer pdf-parser cors
+    npm i @google/generative-ai
