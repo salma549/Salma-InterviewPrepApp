@@ -1,43 +1,4 @@
-// const express = require("express");
-// const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-// const app = express();
-// const router = express.Router();
-
-// // Initialize the Google Generative AI with your API key
-// const genAI = new GoogleGenerativeAI("AIzaSyB-GRBEsB4XCpUaJTt1-lQwGYZvZIyRV-M");
-
-// // Route for generating code based on languages entered by the user
-// router.post("/generate-code", async (req, res) => {
-//   const { skills } = req.body;
-
-//   if (!skills || !Array.isArray(skills) || skills.length === 0) {
-//     return res.status(400).send("Skills are required and should be an array.");
-//   }
-
-//   const generatedCode = {};
-
-//   for (const skill of skills) {
-//     const prompt = `Please generate a sample code in "${skill}" along with practical tips on how to answer coding questions related to this language.`;
-
-//     try {
-//       // Use the generative model to get content based on the prompt
-//       const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
-//       const result = await model.generateContent(prompt);
-//       const response = await result.response.text();
-
-//       // Split response into code and tips and structure the output
-//       generatedCode[skill] = response;
-//     } catch (error) {
-//       console.error(`Error generating code for ${skill}:`, error);
-//       generatedCode[skill] = "Error generating code for this language.";
-//     }
-//   }
-
-//   res.json({ generatedCode });
-// });
-
-// module.exports = router;
 
 
 const express = require("express");
