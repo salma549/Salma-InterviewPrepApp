@@ -1,7 +1,7 @@
 
 
 
-require('dotenv').config();  // Load environment variables from the .env file
+require('dotenv').config();  
 
 const express = require("express");
 const multer = require("multer");
@@ -70,6 +70,8 @@ function extractSkills(text) {
     "GitHub",
   ];
 
+  // Searches for the first occurrence of a skills-related keyword to find the start position of the "Skills" section.
+
   let skillsStart = -1;
   skillsKeywords.some((keyword) => {
     skillsStart = text.search(new RegExp(`\\b${keyword}\\b`, "i"));
@@ -91,6 +93,8 @@ function extractSkills(text) {
   const skillsText = text.slice(skillsStart, skillsEnd).trim();
   return cleanSkillsText(skillsText);
 }
+
+// Removes various phrases, patterns, extra spaces, and newline characters from skillsText.
 
 function cleanSkillsText(skillsText) {
   const cleanedText = skillsText

@@ -91,7 +91,7 @@ function Code() {
                 />
                 <button 
                     onClick={handleGenerateCode}
-                    className="w-full bg-gradient-to-r from-teal-300 to-blue-400 text-gray-800 py-4 rounded-lg shadow-md hover:bg-gradient-to-r from-teal-500 to-blue-600 focus:outline-none transition duration-300 ease-in-out"
+                    className="w-full bg-gradient-to-r from-teal-300 to-blue-400 text-white py-4 rounded-lg shadow-md hover:bg-gradient-to-r from-teal-500 to-blue-600 focus:outline-none transition duration-300 ease-in-out"
                 >
                     {loading ? 'Generating...' : 'Generate Code'}
                 </button>

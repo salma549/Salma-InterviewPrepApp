@@ -19,8 +19,8 @@ const LoadingResume = () => {
         const interval = setInterval(() => {
             setCurrentText(textArray[index]);
             setIndex((prevIndex) => (prevIndex + 1) % textArray.length);
-            setTimeout(() => setCurrentText(''), 5000);
-        }, 6000);
+            setTimeout(() => setCurrentText(''), 6000);
+        }, 7000);
 
         return () => clearInterval(interval);
     }, [index]);

@@ -16,7 +16,7 @@ const Header = () => {
         {/* Logo Section */}
         <div className="flex items-center space-x-2">
           <div className="text-3xl font-extrabold tracking-wide">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r text-white font-signature">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r text-white font-['poppins']">
               InterviewPrep
             </span>
           </div>
